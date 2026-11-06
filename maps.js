@@ -35,8 +35,10 @@ function build(feature, proj) {
 
 const state = { pays: [], depts: [], paysIdx: new Map(), deptIdx: new Map(), metroBox: null };
 
-export function initMaps(paysGeo, deptGeo) {
-  state.pays = paysGeo.features.map((f) => ({ code: f.properties.code, statut: f.properties.statut, ...build(f, projWorld) }));
+export function initMaps(paysGeo, deptGeo, capitales = {}) {
+  state.caps = capitales;
+  state.pays = paysGeo.features.map((f) => ({ code: f.properties.code, nom: f.properties.nom, statut: f.properties.statut, ...build(f, projWorld) }));
+  state.allPaysPath = state.pays.map((p) => p.d).join('');
   for (const p of state.pays) if (p.statut !== 'autre') state.paysIdx.set(p.code, p);
   const kx = Math.cos((46.5 * Math.PI) / 180);
   const projMetro = (lon, lat) => [lon * kx, -lat];
@@ -65,27 +67,80 @@ function svg(box, inner, extra = '') {
 
 const hit = (b, v) => b.maxX >= v.minX && b.minX <= v.maxX && b.maxY >= v.minY && b.minY <= v.maxY;
 
-export function mapPays(code) {
+const WORLD = { minX: -180, maxX: 180, minY: mercY(80), maxY: mercY(-57) };
+const escXml = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+export function mapPays(code, capitalName = '') {
   const t = state.paysIdx.get(code);
   if (!t) return '';
-  const WORLD = { minX: -180, maxX: 180, minY: mercY(80), maxY: mercY(-57) };
   const m = t.main || t.bbox;
   const tw = m.maxX - m.minX, th = m.maxY - m.minY;
+  const cap = state.caps[code] ? projWorld(...state.caps[code]) : null;
   let view;
   if (tw > 100) {
     view = WORLD;
   } else {
     const cx = (m.minX + m.maxX) / 2, cy = (m.minY + m.maxY) / 2;
-    let w = Math.max(tw * 2.4, th * 2.4 * (4 / 3), 28);
-    let h = w * 0.75;
+    const w = Math.max(tw * 3.4, th * 3.4 * (4 / 3), 60);
+    const h = w * 0.75;
     view = { minX: cx - w / 2, maxX: cx + w / 2, minY: cy - h / 2, maxY: cy + h / 2 };
   }
-  const bg = state.pays.filter((p) => p.code !== code && hit(p.bbox, view)).map((p) => `<path class="bg" d="${p.d}"/>`).join('');
   const w = view.maxX - view.minX;
-  const small = tw < 5 && th < 5;
-  const cx = (m.minX + m.maxX) / 2, cy = (m.minY + m.maxY) / 2;
-  const marker = small || view === WORLD ? `<circle class="mk" cx="${R(cx)}" cy="${R(cy)}" r="${R(w / (view === WORLD ? 60 : 22))}"/>` : '';
-  return svg(view, bg + `<path class="tgt" d="${t.d}"/>`, marker);
+  const isWorld = view === WORLD;
+  const near = state.pays.filter((p) => p.code !== code && hit(p.bbox, view));
+  let inner = `<path class="bg" d="${near.map((p) => p.d).join('')}"/><path class="tgt" d="${t.d}"/>`;
+
+  // Étiquettes : pays voisins (assez grands pour être lisibles), sans chevauchement.
+  const fs = w / 38;
+  const placed = [];
+  const free = (x, y, text, size) => {
+    const bw = text.length * size * 0.56, bh = size * 1.1;
+    const box = { x0: x - bw / 2, x1: x + bw / 2, y0: y - bh / 2, y1: y + bh / 2 };
+    if (box.x0 < view.minX || box.x1 > view.maxX || box.y0 < view.minY || box.y1 > view.maxY) return false;
+    if (placed.some((b) => box.x0 < b.x1 && box.x1 > b.x0 && box.y0 < b.y1 && box.y1 > b.y0)) return false;
+    placed.push(box);
+    return true;
+  };
+  let labels = '';
+  if (!isWorld) {
+    // Zone occupée par la mini-carte (en haut à droite) : pas d'étiquette dessous.
+    const iw = w * 0.36, ih = iw * ((WORLD.maxY - WORLD.minY) / 360) + w * 0.02;
+    placed.push({ x0: view.maxX - iw, x1: view.maxX, y0: view.minY, y1: view.minY + ih });
+  }
+  if (cap) {
+    const [px, py] = cap;
+    placed.push({ x0: px - fs * 0.6, x1: px + fs * 0.6, y0: py - fs * 0.6, y1: py + fs * 0.6 });
+    if (capitalName && free(px + fs * 0.6 + capitalName.length * fs * 0.52 * 0.5 + fs * 0.2, py, capitalName, fs * 0.95)) {
+      labels += `<text class="lbl cap" x="${R(px + fs * 0.7)}" y="${R(py)}" font-size="${R(fs * 0.95)}" text-anchor="start" dominant-baseline="central">${escXml(capitalName)}</text>`;
+    }
+  }
+  if (!isWorld) {
+    const tm = t.main || t.bbox;
+    const tx = (tm.minX + tm.maxX) / 2, ty = (tm.minY + tm.maxY) / 2;
+    const tname = state.pays.find((p) => p.code === code).nom;
+    if (free(tx, ty, tname, fs * 1.15)) labels += `<text class="lbl self" x="${R(tx)}" y="${R(ty)}" font-size="${R(fs * 1.15)}" text-anchor="middle" dominant-baseline="central">${escXml(tname)}</text>`;
+    const cands = near
+      .map((p) => ({ p, mm: p.main || p.bbox }))
+      .filter(({ mm }) => mm.maxX - mm.minX >= w / 16)
+      .sort((a, b) => (b.mm.maxX - b.mm.minX) * (b.mm.maxY - b.mm.minY) - (a.mm.maxX - a.mm.minX) * (a.mm.maxY - a.mm.minY));
+    for (const { p, mm } of cands) {
+      const x = (mm.minX + mm.maxX) / 2, y = (mm.minY + mm.maxY) / 2;
+      if (x < view.minX || x > view.maxX || y < view.minY || y > view.maxY) continue;
+      if (free(x, y, p.nom, fs)) labels += `<text class="lbl" x="${R(x)}" y="${R(y)}" font-size="${R(fs)}" text-anchor="middle" dominant-baseline="central">${escXml(p.nom)}</text>`;
+    }
+  }
+  let extra = '';
+  if (cap) extra += `<circle class="pin" cx="${R(cap[0])}" cy="${R(cap[1])}" r="${R(w / 90)}"/>`;
+  else extra += `<circle class="mk" cx="${R((m.minX + m.maxX) / 2)}" cy="${R((m.minY + m.maxY) / 2)}" r="${R(w / 40)}"/>`;
+  const main = svg(view, inner + labels, extra);
+
+  // Mini-carte du monde pour situer le pays par rapport au continent.
+  let inset = '';
+  if (!isWorld) {
+    const ic = cap || [(m.minX + m.maxX) / 2, (m.minY + m.maxY) / 2];
+    inset = `<div class="inset">${svg(WORLD, `<path class="bg" d="${state.allPaysPath}"/><path class="tgt" d="${t.d}"/>`, `<circle class="pinw" cx="${R(ic[0])}" cy="${R(ic[1])}" r="7"/>`)}</div>`;
+  }
+  return `<div class="mapwrap">${main}${inset}</div>`;
 }
 
 export function mapDept(code) {

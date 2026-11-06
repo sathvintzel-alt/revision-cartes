@@ -66,3 +66,12 @@ input#ans:focus { outline: none; border-color: var(--accent); }
 .verdict.ok { color: var(--g2); } .verdict.close { color: var(--g1); } .verdict.bad { color: var(--g0); }
 .grades.three { grid-template-columns: repeat(3, 1fr); }
 .btn.g0 { color: #fff; }
+.mapwrap { position: relative; }
+.inset { position: absolute; right: 8px; top: 8px; width: 34%; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--card); box-shadow: 0 1px 4px rgba(0,0,0,.15); }
+.inset .map { border: 0; border-radius: 0; max-height: none; }
+.inset .bg { stroke: none; }
+.map .pin { fill: #e03131; stroke: #fff; stroke-width: 2px; vector-effect: non-scaling-stroke; }
+.map .pinw { fill: #e03131; stroke: #fff; stroke-width: 1.5px; vector-effect: non-scaling-stroke; }
+.map .lbl { fill: var(--muted); font-weight: 600; paint-order: stroke; stroke: var(--card); stroke-width: 2px; stroke-linejoin: round; pointer-events: none; }
+.map .lbl.self { fill: var(--tgt); }
+.map .lbl.cap { fill: #e03131; font-weight: 700; }
