@@ -1,5 +1,5 @@
 // Service worker : fonctionnement hors connexion. Incrémenter VERSION à chaque mise à jour des fichiers.
-const VERSION = 'v4';
+const VERSION = 'v5';
 const CACHE = 'cartes-' + VERSION;
 const CORE = [
   './', 'index.html', 'style.css', 'app.js', 'config.js', 'srs.js', 'sync.js', 'maps.js',

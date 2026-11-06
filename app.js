@@ -1,5 +1,5 @@
 import { CONFIG } from './config.js';
-import { GRADES, applyGrade, isDue, labelDays, newRecord } from './srs.js';
+import { GRADES, applyGrade, isDue, labelDays } from './srs.js';
 import { store, pull, push, merge } from './sync.js';
 import { initMaps, mapPays, mapDept } from './maps.js';
 
@@ -14,7 +14,6 @@ const DECKS = [
 
 const S = {
   profile: store.get('profile', null),
-  settings: store.get('settings', { newPerDay: CONFIG.defaultNewPerDay }),
   depts: [], pays: [], items: [], byId: new Map(),
   records: {}, dirty: new Set(),
   sync: { state: 'idle', msg: '' },
@@ -163,65 +162,73 @@ function renderSyncDot() {
   if (el) el.innerHTML = `<span class="dot ${S.sync.state}"></span>${esc(S.sync.msg)}`;
 }
 
-// ---------- Sessions ----------
-function introducedToday(deck) {
-  const today = new Date().toDateString();
-  let n = 0;
-  for (const [id, rec] of Object.entries(S.records)) {
-    if (id.startsWith(deck + ':') && new Date(rec.created_at).toDateString() === today) n++;
-  }
-  return n;
+// ---------- Sessions (révision continue, sans limite) ----------
+const RETRY_GAP = 10; // une carte ratée revient 10 cartes plus tard
+
+function deckItems(deckId) {
+  const decks = deckId === 'all' ? DECKS.map((d) => d.id) : [deckId];
+  return S.items.filter((i) => decks.includes(i.deck));
 }
 
 function stats(deckId) {
-  const decks = deckId === 'all' ? DECKS.map((d) => d.id) : [deckId];
-  let due = 0, unseen = 0, newLeft = 0;
-  for (const d of decks) {
-    const its = S.items.filter((i) => i.deck === d);
-    due += its.filter((i) => isDue(S.records[i.id])).length;
-    const u = its.filter((i) => !S.records[i.id]).length;
-    unseen += u;
-    newLeft += Math.min(u, Math.max(0, S.settings.newPerDay - introducedToday(d)));
-  }
-  return { due, unseen, newLeft };
+  const its = deckItems(deckId);
+  return { due: its.filter((i) => isDue(S.records[i.id])).length, unseen: its.filter((i) => !S.records[i.id]).length };
 }
 
 function startSession(deckId) {
-  const decks = deckId === 'all' ? DECKS.map((d) => d.id) : [deckId];
-  let due = [], news = [];
-  for (const d of decks) {
-    const its = S.items.filter((i) => i.deck === d);
-    due.push(...its.filter((i) => isDue(S.records[i.id])));
-    const room = Math.max(0, S.settings.newPerDay - introducedToday(d));
-    news.push(...shuffle(its.filter((i) => !S.records[i.id])).slice(0, room));
-  }
-  shuffle(due);
-  // Intercale les nouvelles cartes parmi les révisions.
-  const queue = [...due];
-  news.forEach((n, i) => queue.splice(Math.min(queue.length, 2 + i * 3), 0, n));
-  if (!queue.length) return;
-  S.session = { queue, total: queue.length, done: 0, good: 0, answered: 0, revealed: false, deckId };
+  const its = deckItems(deckId);
+  S.session = {
+    deckId,
+    due: shuffle(its.filter((i) => isDue(S.records[i.id]))),
+    fresh: shuffle(its.filter((i) => !S.records[i.id])),
+    // Cartes déjà vues et pas encore dues : révision anticipée quand tout le reste est épuisé.
+    later: its.filter((i) => S.records[i.id] && !isDue(S.records[i.id])).sort((a, b) => new Date(S.records[a.id].due) - new Date(S.records[b.id].due)),
+    retry: [],
+    answered: 0, good: 0, discovered: 0,
+    current: null, revealed: false, finished: false,
+  };
+  nextCard();
+  if (!S.session.current) { S.session = null; return; }
   S.view = 'study';
   render();
 }
 
+function nextCard() {
+  const s = S.session;
+  // 1. Une carte ratée dont le tour est revenu.
+  const ri = s.retry.findIndex((r) => r.at <= s.answered);
+  if (ri >= 0) { s.current = s.retry.splice(ri, 1)[0].it; return; }
+  // 2. Révisions dues, avec une nouvelle carte toutes les 3 cartes ; puis nouvelles seules.
+  const wantNew = s.fresh.length && (!s.due.length || s.answered % 3 === 2);
+  let it = (wantNew ? s.fresh.shift() : s.due.shift()) || s.fresh.shift() || s.due.shift();
+  // 3. Plus rien : cartes ratées en attente, puis révision anticipée.
+  if (!it && s.retry.length) it = s.retry.shift().it;
+  if (!it) it = s.later.shift();
+  s.current = it || null;
+}
+
 function grade(g) {
   const s = S.session;
-  const it = s.queue.shift();
+  const it = s.current;
+  if (!S.records[it.id]) s.discovered++;
   const { rec } = applyGrade(S.records[it.id], g);
   S.records[it.id] = rec;
   S.dirty.add(it.id);
   persist();
   schedulePush();
   s.answered++;
-  if (g >= 2) s.good++;
-  if (g === 0) {
-    s.queue.splice(Math.min(s.queue.length, 4), 0, it);
-  } else {
-    s.done++;
-  }
+  if (g >= 1) s.good++;
+  if (g === 0) s.retry.push({ it, at: s.answered + RETRY_GAP });
   s.revealed = false;
-  if (!s.queue.length) s.finished = true;
+  nextCard();
+  if (!s.current) s.finished = true;
+  render();
+}
+
+function endSession() {
+  const s = S.session;
+  if (s && s.answered > 0) { s.finished = true; s.stopped = true; }
+  else { S.session = null; S.view = 'home'; }
   render();
 }
 
@@ -250,17 +257,17 @@ function chooseProfile(id) {
 
 function renderHome() {
   const name = CONFIG.profiles.find((p) => p.id === S.profile)?.name;
-  const all = stats('all');
   $app.innerHTML = `
     <div class="row"><h1>Bonjour ${esc(name)}</h1><button class="iconbtn" id="open-settings" aria-label="Réglages">⚙︎</button></div>
     <p class="muted small" id="sync"></p>
     ${DECKS.map((d) => {
       const st = stats(d.id);
       return `<div class="card deck"><div><h2>${esc(d.name)}</h2><p class="muted small">${esc(d.sub)}</p></div>
-        <div class="counts"><div><b>${st.due}</b><span class="muted small">à revoir</span></div><div><b>${st.newLeft}</b><span class="muted small">nouvelles</span></div><div><b>${st.unseen}</b><span class="muted small">jamais vues</span></div></div>
-        <button class="btn" data-deck="${d.id}" ${st.due + st.newLeft === 0 ? 'disabled' : ''}>Réviser</button></div>`;
+        <div class="counts"><div><b>${st.due}</b><span class="muted small">à revoir</span></div><div><b>${st.unseen}</b><span class="muted small">jamais vues</span></div></div>
+        <button class="btn" data-deck="${d.id}">Réviser</button></div>`;
     }).join('')}
-    <button class="btn ghost" data-deck="all" ${all.due + all.newLeft === 0 ? 'disabled' : ''}>Tout réviser (${all.due + all.newLeft})</button>`;
+    <button class="btn ghost" data-deck="all">Tout mélanger (départements et pays)</button>
+    <p class="muted small center">Révision sans limite : arrête quand tu veux avec « Terminer ».</p>`;
   $app.querySelectorAll('[data-deck]').forEach((b) => b.addEventListener('click', () => startSession(b.dataset.deck)));
   document.getElementById('open-settings').addEventListener('click', () => { S.view = 'settings'; render(); });
   renderSyncDot();
@@ -268,10 +275,10 @@ function renderHome() {
 
 function renderStudy() {
   const s = S.session;
-  const it = s.queue[0];
+  const it = s.current;
   const q = question(it);
-  const pct = Math.round((s.done / s.total) * 100);
-  let html = `<div class="row"><button class="iconbtn" id="quit" aria-label="Quitter">✕</button><div class="prog"><i style="width:${pct}%"></i></div><span class="muted small">${s.done}/${s.total}</span></div>
+  const counter = `${s.answered} réponse${s.answered > 1 ? 's' : ''} · ${s.good} bonne${s.good > 1 ? 's' : ''}${s.retry.length ? ` · ${s.retry.length} à revoir` : ''}`;
+  let html = `<div class="row"><span class="muted small">${counter}</span><button class="btn ghost small" id="quit">Terminer</button></div>
     <div class="card q"><p class="label">${esc(q.label)}</p>${q.big ? `<p class="big">${esc(q.big)}</p>` : `<img class="flag" src="data/${esc(q.flag)}" alt="Drapeau à identifier">`}</div>`;
   const days = (g) => labelDays(applyGrade(S.records[it.id], g).days);
   if (!s.revealed) {
@@ -284,13 +291,13 @@ function renderStudy() {
       : `<p class="verdict bad">${s.typed ? `✗ Tu as écrit « ${esc(s.typed)} ». La réponse était :` : 'La réponse était :'}</p>`;
     html += `${banner}<p class="answer">${esc(q.answer)}</p><div class="card stack">${details(it)}</div>`;
     if (v === 'wrong') {
-      html += `<div class="stack"><button class="btn g0" data-g="0">Continuer (revue dans ${days(0)})</button><button class="btn ghost" data-g="2">J'avais bon (orthographe ou variante acceptable)</button></div>`;
+      html += `<div class="stack"><button class="btn g0" data-g="0">Suivante (celle-ci revient dans ${RETRY_GAP} cartes)</button><button class="btn ghost" data-g="2">J'avais bon (orthographe ou variante acceptable)</button></div>`;
     } else {
       html += `<div class="grades three">${GRADES.slice(1).map((g) => `<button class="${g.cls}" data-g="${g.k}">${g.label}<small>${days(g.k)}</small></button>`).join('')}</div>`;
     }
   }
   $app.innerHTML = html;
-  document.getElementById('quit').addEventListener('click', () => { S.session = null; S.view = 'home'; render(); });
+  document.getElementById('quit').addEventListener('click', endSession);
   const reveal = (typed) => { s.typed = typed; s.verdict = check(it, typed); s.revealed = true; render(); window.scrollTo(0, 0); };
   document.getElementById('f')?.addEventListener('submit', (e) => { e.preventDefault(); reveal(document.getElementById('ans').value); });
   document.getElementById('idk')?.addEventListener('click', () => { s.typed = ''; s.verdict = 'wrong'; s.revealed = true; render(); window.scrollTo(0, 0); });
@@ -301,7 +308,9 @@ function renderStudy() {
 function renderDone() {
   const s = S.session;
   const rate = s.answered ? Math.round((s.good / s.answered) * 100) : 0;
-  $app.innerHTML = `<div class="card center stack"><h1>Session terminée</h1><p>${s.done} cartes validées, ${s.answered} réponses, ${rate} % de réussite.</p><button class="btn" id="back">Retour</button></div>`;
+  const title = s.stopped ? 'Session terminée' : 'Tu as fait le tour du paquet';
+  const pending = s.retry.length ? `<p class="muted small">${s.retry.length} carte${s.retry.length > 1 ? 's' : ''} ratée${s.retry.length > 1 ? 's' : ''} reviendr${s.retry.length > 1 ? 'ont' : 'a'} à la prochaine session.</p>` : '';
+  $app.innerHTML = `<div class="card center stack"><h1>${title}</h1><p>${s.answered} réponses, ${s.good} bonnes (${rate} %), ${s.discovered} nouvelle${s.discovered > 1 ? 's' : ''} carte${s.discovered > 1 ? 's' : ''} découverte${s.discovered > 1 ? 's' : ''}.</p>${pending}<button class="btn" id="back">Retour</button></div>`;
   document.getElementById('back').addEventListener('click', () => { S.session = null; S.view = 'home'; render(); });
 }
 
@@ -309,14 +318,9 @@ function renderSettings() {
   const name = CONFIG.profiles.find((p) => p.id === S.profile)?.name;
   $app.innerHTML = `
     <div class="row"><button class="iconbtn" id="back" aria-label="Retour">←</button><h1>Réglages</h1><span></span></div>
-    <div class="card stack"><h2>Nouvelles cartes par jour et par paquet</h2>
-      <div class="stepper"><button id="minus" aria-label="Moins">−</button><b id="npd">${S.settings.newPerDay}</b><button id="plus" aria-label="Plus">+</button></div></div>
     <div class="card stack"><h2>Profil : ${esc(name)}</h2><button class="btn ghost" id="switch">Changer de profil</button></div>
     <div class="card stack"><h2>Synchronisation</h2><p class="small" id="sync"></p><button class="btn ghost" id="sync-btn">Synchroniser maintenant</button></div>`;
-  const setN = (n) => { S.settings.newPerDay = Math.max(0, Math.min(100, n)); store.set('settings', S.settings); document.getElementById('npd').textContent = S.settings.newPerDay; };
   document.getElementById('back').addEventListener('click', () => { S.view = 'home'; render(); });
-  document.getElementById('minus').addEventListener('click', () => setN(S.settings.newPerDay - 5));
-  document.getElementById('plus').addEventListener('click', () => setN(S.settings.newPerDay + 5));
   document.getElementById('switch').addEventListener('click', () => { S.profile = null; store.set('profile', null); render(); });
   document.getElementById('sync-btn').addEventListener('click', syncNow);
   renderSyncDot();

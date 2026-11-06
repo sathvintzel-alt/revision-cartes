@@ -7,5 +7,4 @@ export const CONFIG = {
     { id: 'clement', name: 'Clément' },
     { id: 'samantha', name: 'Samantha' },
   ],
-  defaultNewPerDay: 15,
 };
