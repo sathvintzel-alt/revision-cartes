@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+const p='_raw/npm2/package/data/';
+const deps=JSON.parse(fs.readFileSync(p+'departements.json','utf8'));
+const regs=JSON.parse(fs.readFileSync(p+'regions.json','utf8'));
+const com=JSON.parse(fs.readFileSync(p+'communes.json','utf8'));
+const cn=Object.fromEntries(com.map(c=>[c.code,c.nom]));
+const rn=Object.fromEntries(regs.map(r=>[r.code,r.nom]));
+const out=deps.map(d=>({code:d.code,nom:d.nom,prefecture:cn[d.chefLieu],region:rn[d.region],regionCode:d.region}));
+console.log(out.length, out.filter(o=>!o.prefecture||!o.region).length);
+console.log(out.map(o=>`${o.code}|${o.nom}|${o.prefecture}|${o.region}`).join('\n'));
+fs.writeFileSync('_raw/dep_draft.json',JSON.stringify(out));
+const g=JSON.parse(fs.readFileSync('_raw/fr/depsimp.geojson','utf8'));
+console.log(g.features.length, JSON.stringify(g.features[0].properties));
+const g2=JSON.parse(fs.readFileSync('_raw/fr/dep.geojson','utf8'));
+console.log(g2.features.length, g2.features.map(f=>f.properties.code).join(','));

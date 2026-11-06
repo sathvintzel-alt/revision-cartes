@@ -1,0 +1,709 @@
+[
+ {
+  "code": "01",
+  "nom": "Ain",
+  "prefecture": "Bourg-en-Bresse",
+  "region": "Auvergne-Rhône-Alpes",
+  "regionCode": "84"
+ },
+ {
+  "code": "02",
+  "nom": "Aisne",
+  "prefecture": "Laon",
+  "region": "Hauts-de-France",
+  "regionCode": "32"
+ },
+ {
+  "code": "03",
+  "nom": "Allier",
+  "prefecture": "Moulins",
+  "region": "Auvergne-Rhône-Alpes",
+  "regionCode": "84"
+ },
+ {
+  "code": "04",
+  "nom": "Alpes-de-Haute-Provence",
+  "prefecture": "Digne-les-Bains",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "regionCode": "93"
+ },
+ {
+  "code": "05",
+  "nom": "Hautes-Alpes",
+  "prefecture": "Gap",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "regionCode": "93"
+ },
+ {
+  "code": "06",
+  "nom": "Alpes-Maritimes",
+  "prefecture": "Nice",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "regionCode": "93"
+ },
+ {
+  "code": "07",
+  "nom": "Ardèche",
+  "prefecture": "Privas",
+  "region": "Auvergne-Rhône-Alpes",
+  "regionCode": "84"
+ },
+ {
+  "code": "08",
+  "nom": "Ardennes",
+  "prefecture": "Charleville-Mézières",
+  "region": "Grand Est",
+  "regionCode": "44"
+ },
+ {
+  "code": "09",
+  "nom": "Ariège",
+  "prefecture": "Foix",
+  "region": "Occitanie",
+  "regionCode": "76"
+ },
+ {
+  "code": "10",
+  "nom": "Aube",
+  "prefecture": "Troyes",
+  "region": "Grand Est",
+  "regionCode": "44"
+ },
+ {
+  "code": "11",
+  "nom": "Aude",
+  "prefecture": "Carcassonne",
+  "region": "Occitanie",
+  "regionCode": "76"
+ },
+ {
+  "code": "12",
+  "nom": "Aveyron",
+  "prefecture": "Rodez",
+  "region": "Occitanie",
+  "regionCode": "76"
+ },
+ {
+  "code": "13",
+  "nom": "Bouches-du-Rhône",
+  "prefecture": "Marseille",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "regionCode": "93"
+ },
+ {
+  "code": "14",
+  "nom": "Calvados",
+  "prefecture": "Caen",
+  "region": "Normandie",
+  "regionCode": "28"
+ },
+ {
+  "code": "15",
+  "nom": "Cantal",
+  "prefecture": "Aurillac",
+  "region": "Auvergne-Rhône-Alpes",
+  "regionCode": "84"
+ },
+ {
+  "code": "16",
+  "nom": "Charente",
+  "prefecture": "Angoulême",
+  "region": "Nouvelle-Aquitaine",
+  "regionCode": "75"
+ },
+ {
+  "code": "17",
+  "nom": "Charente-Maritime",
+  "prefecture": "La Rochelle",
+  "region": "Nouvelle-Aquitaine",
+  "regionCode": "75"
+ },
+ {
+  "code": "18",
+  "nom": "Cher",
+  "prefecture": "Bourges",
+  "region": "Centre-Val de Loire",
+  "regionCode": "24"
+ },
+ {
+  "code": "19",
+  "nom": "Corrèze",
+  "prefecture": "Tulle",
+  "region": "Nouvelle-Aquitaine",
+  "regionCode": "75"
+ },
+ {
+  "code": "21",
+  "nom": "Côte-d'Or",
+  "prefecture": "Dijon",
+  "region": "Bourgogne-Franche-Comté",
+  "regionCode": "27"
+ },
+ {
+  "code": "22",
+  "nom": "Côtes-d'Armor",
+  "prefecture": "Saint-Brieuc",
+  "region": "Bretagne",
+  "regionCode": "53"
+ },
+ {
+  "code": "23",
+  "nom": "Creuse",
+  "prefecture": "Guéret",
+  "region": "Nouvelle-Aquitaine",
+  "regionCode": "75"
+ },
+ {
+  "code": "24",
+  "nom": "Dordogne",
+  "prefecture": "Périgueux",
+  "region": "Nouvelle-Aquitaine",
+  "regionCode": "75"
+ },
+ {
+  "code": "25",
+  "nom": "Doubs",
+  "prefecture": "Besançon",
+  "region": "Bourgogne-Franche-Comté",
+  "regionCode": "27"
+ },
+ {
+  "code": "26",
+  "nom": "Drôme",
+  "prefecture": "Valence",
+  "region": "Auvergne-Rhône-Alpes",
+  "regionCode": "84"
+ },
+ {
+  "code": "27",
+  "nom": "Eure",
+  "prefecture": "Évreux",
+  "region": "Normandie",
+  "regionCode": "28"
+ },
+ {
+  "code": "28",
+  "nom": "Eure-et-Loir",
+  "prefecture": "Chartres",
+  "region": "Centre-Val de Loire",
+  "regionCode": "24"
+ },
+ {
+  "code": "29",
+  "nom": "Finistère",
+  "prefecture": "Quimper",
+  "region": "Bretagne",
+  "regionCode": "53"
+ },
+ {
+  "code": "2A",
+  "nom": "Corse-du-Sud",
+  "prefecture": "Ajaccio",
+  "region": "Corse",
+  "regionCode": "94"
+ },
+ {
+  "code": "2B",
+  "nom": "Haute-Corse",
+  "prefecture": "Bastia",
+  "region": "Corse",
+  "regionCode": "94"
+ },
+ {
+  "code": "30",
+  "nom": "Gard",
+  "prefecture": "Nîmes",
+  "region": "Occitanie",
+  "regionCode": "76"
+ },
+ {
+  "code": "31",
+  "nom": "Haute-Garonne",
+  "prefecture": "Toulouse",
+  "region": "Occitanie",
+  "regionCode": "76"
+ },
+ {
+  "code": "32",
+  "nom": "Gers",
+  "prefecture": "Auch",
+  "region": "Occitanie",
+  "regionCode": "76"
+ },
+ {
+  "code": "33",
+  "nom": "Gironde",
+  "prefecture": "Bordeaux",
+  "region": "Nouvelle-Aquitaine",
+  "regionCode": "75"
+ },
+ {
+  "code": "34",
+  "nom": "Hérault",
+  "prefecture": "Montpellier",
+  "region": "Occitanie",
+  "regionCode": "76"
+ },
+ {
+  "code": "35",
+  "nom": "Ille-et-Vilaine",
+  "prefecture": "Rennes",
+  "region": "Bretagne",
+  "regionCode": "53"
+ },
+ {
+  "code": "36",
+  "nom": "Indre",
+  "prefecture": "Châteauroux",
+  "region": "Centre-Val de Loire",
+  "regionCode": "24"
+ },
+ {
+  "code": "37",
+  "nom": "Indre-et-Loire",
+  "prefecture": "Tours",
+  "region": "Centre-Val de Loire",
+  "regionCode": "24"
+ },
+ {
+  "code": "38",
+  "nom": "Isère",
+  "prefecture": "Grenoble",
+  "region": "Auvergne-Rhône-Alpes",
+  "regionCode": "84"
+ },
+ {
+  "code": "39",
+  "nom": "Jura",
+  "prefecture": "Lons-le-Saunier",
+  "region": "Bourgogne-Franche-Comté",
+  "regionCode": "27"
+ },
+ {
+  "code": "40",
+  "nom": "Landes",
+  "prefecture": "Mont-de-Marsan",
+  "region": "Nouvelle-Aquitaine",
+  "regionCode": "75"
+ },
+ {
+  "code": "41",
+  "nom": "Loir-et-Cher",
+  "prefecture": "Blois",
+  "region": "Centre-Val de Loire",
+  "regionCode": "24"
+ },
+ {
+  "code": "42",
+  "nom": "Loire",
+  "prefecture": "Saint-Étienne",
+  "region": "Auvergne-Rhône-Alpes",
+  "regionCode": "84"
+ },
+ {
+  "code": "43",
+  "nom": "Haute-Loire",
+  "prefecture": "Le Puy-en-Velay",
+  "region": "Auvergne-Rhône-Alpes",
+  "regionCode": "84"
+ },
+ {
+  "code": "44",
+  "nom": "Loire-Atlantique",
+  "prefecture": "Nantes",
+  "region": "Pays de la Loire",
+  "regionCode": "52"
+ },
+ {
+  "code": "45",
+  "nom": "Loiret",
+  "prefecture": "Orléans",
+  "region": "Centre-Val de Loire",
+  "regionCode": "24"
+ },
+ {
+  "code": "46",
+  "nom": "Lot",
+  "prefecture": "Cahors",
+  "region": "Occitanie",
+  "regionCode": "76"
+ },
+ {
+  "code": "47",
+  "nom": "Lot-et-Garonne",
+  "prefecture": "Agen",
+  "region": "Nouvelle-Aquitaine",
+  "regionCode": "75"
+ },
+ {
+  "code": "48",
+  "nom": "Lozère",
+  "prefecture": "Mende",
+  "region": "Occitanie",
+  "regionCode": "76"
+ },
+ {
+  "code": "49",
+  "nom": "Maine-et-Loire",
+  "prefecture": "Angers",
+  "region": "Pays de la Loire",
+  "regionCode": "52"
+ },
+ {
+  "code": "50",
+  "nom": "Manche",
+  "prefecture": "Saint-Lô",
+  "region": "Normandie",
+  "regionCode": "28"
+ },
+ {
+  "code": "51",
+  "nom": "Marne",
+  "prefecture": "Châlons-en-Champagne",
+  "region": "Grand Est",
+  "regionCode": "44"
+ },
+ {
+  "code": "52",
+  "nom": "Haute-Marne",
+  "prefecture": "Chaumont",
+  "region": "Grand Est",
+  "regionCode": "44"
+ },
+ {
+  "code": "53",
+  "nom": "Mayenne",
+  "prefecture": "Laval",
+  "region": "Pays de la Loire",
+  "regionCode": "52"
+ },
+ {
+  "code": "54",
+  "nom": "Meurthe-et-Moselle",
+  "prefecture": "Nancy",
+  "region": "Grand Est",
+  "regionCode": "44"
+ },
+ {
+  "code": "55",
+  "nom": "Meuse",
+  "prefecture": "Bar-le-Duc",
+  "region": "Grand Est",
+  "regionCode": "44"
+ },
+ {
+  "code": "56",
+  "nom": "Morbihan",
+  "prefecture": "Vannes",
+  "region": "Bretagne",
+  "regionCode": "53"
+ },
+ {
+  "code": "57",
+  "nom": "Moselle",
+  "prefecture": "Metz",
+  "region": "Grand Est",
+  "regionCode": "44"
+ },
+ {
+  "code": "58",
+  "nom": "Nièvre",
+  "prefecture": "Nevers",
+  "region": "Bourgogne-Franche-Comté",
+  "regionCode": "27"
+ },
+ {
+  "code": "59",
+  "nom": "Nord",
+  "prefecture": "Lille",
+  "region": "Hauts-de-France",
+  "regionCode": "32"
+ },
+ {
+  "code": "60",
+  "nom": "Oise",
+  "prefecture": "Beauvais",
+  "region": "Hauts-de-France",
+  "regionCode": "32"
+ },
+ {
+  "code": "61",
+  "nom": "Orne",
+  "prefecture": "Alençon",
+  "region": "Normandie",
+  "regionCode": "28"
+ },
+ {
+  "code": "62",
+  "nom": "Pas-de-Calais",
+  "prefecture": "Arras",
+  "region": "Hauts-de-France",
+  "regionCode": "32"
+ },
+ {
+  "code": "63",
+  "nom": "Puy-de-Dôme",
+  "prefecture": "Clermont-Ferrand",
+  "region": "Auvergne-Rhône-Alpes",
+  "regionCode": "84"
+ },
+ {
+  "code": "64",
+  "nom": "Pyrénées-Atlantiques",
+  "prefecture": "Pau",
+  "region": "Nouvelle-Aquitaine",
+  "regionCode": "75"
+ },
+ {
+  "code": "65",
+  "nom": "Hautes-Pyrénées",
+  "prefecture": "Tarbes",
+  "region": "Occitanie",
+  "regionCode": "76"
+ },
+ {
+  "code": "66",
+  "nom": "Pyrénées-Orientales",
+  "prefecture": "Perpignan",
+  "region": "Occitanie",
+  "regionCode": "76"
+ },
+ {
+  "code": "67",
+  "nom": "Bas-Rhin",
+  "prefecture": "Strasbourg",
+  "region": "Grand Est",
+  "regionCode": "44"
+ },
+ {
+  "code": "68",
+  "nom": "Haut-Rhin",
+  "prefecture": "Colmar",
+  "region": "Grand Est",
+  "regionCode": "44"
+ },
+ {
+  "code": "69",
+  "nom": "Rhône",
+  "prefecture": "Lyon",
+  "region": "Auvergne-Rhône-Alpes",
+  "regionCode": "84"
+ },
+ {
+  "code": "70",
+  "nom": "Haute-Saône",
+  "prefecture": "Vesoul",
+  "region": "Bourgogne-Franche-Comté",
+  "regionCode": "27"
+ },
+ {
+  "code": "71",
+  "nom": "Saône-et-Loire",
+  "prefecture": "Mâcon",
+  "region": "Bourgogne-Franche-Comté",
+  "regionCode": "27"
+ },
+ {
+  "code": "72",
+  "nom": "Sarthe",
+  "prefecture": "Le Mans",
+  "region": "Pays de la Loire",
+  "regionCode": "52"
+ },
+ {
+  "code": "73",
+  "nom": "Savoie",
+  "prefecture": "Chambéry",
+  "region": "Auvergne-Rhône-Alpes",
+  "regionCode": "84"
+ },
+ {
+  "code": "74",
+  "nom": "Haute-Savoie",
+  "prefecture": "Annecy",
+  "region": "Auvergne-Rhône-Alpes",
+  "regionCode": "84"
+ },
+ {
+  "code": "75",
+  "nom": "Paris",
+  "prefecture": "Paris",
+  "region": "Île-de-France",
+  "regionCode": "11"
+ },
+ {
+  "code": "76",
+  "nom": "Seine-Maritime",
+  "prefecture": "Rouen",
+  "region": "Normandie",
+  "regionCode": "28"
+ },
+ {
+  "code": "77",
+  "nom": "Seine-et-Marne",
+  "prefecture": "Melun",
+  "region": "Île-de-France",
+  "regionCode": "11"
+ },
+ {
+  "code": "78",
+  "nom": "Yvelines",
+  "prefecture": "Versailles",
+  "region": "Île-de-France",
+  "regionCode": "11"
+ },
+ {
+  "code": "79",
+  "nom": "Deux-Sèvres",
+  "prefecture": "Niort",
+  "region": "Nouvelle-Aquitaine",
+  "regionCode": "75"
+ },
+ {
+  "code": "80",
+  "nom": "Somme",
+  "prefecture": "Amiens",
+  "region": "Hauts-de-France",
+  "regionCode": "32"
+ },
+ {
+  "code": "81",
+  "nom": "Tarn",
+  "prefecture": "Albi",
+  "region": "Occitanie",
+  "regionCode": "76"
+ },
+ {
+  "code": "82",
+  "nom": "Tarn-et-Garonne",
+  "prefecture": "Montauban",
+  "region": "Occitanie",
+  "regionCode": "76"
+ },
+ {
+  "code": "83",
+  "nom": "Var",
+  "prefecture": "Toulon",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "regionCode": "93"
+ },
+ {
+  "code": "84",
+  "nom": "Vaucluse",
+  "prefecture": "Avignon",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "regionCode": "93"
+ },
+ {
+  "code": "85",
+  "nom": "Vendée",
+  "prefecture": "La Roche-sur-Yon",
+  "region": "Pays de la Loire",
+  "regionCode": "52"
+ },
+ {
+  "code": "86",
+  "nom": "Vienne",
+  "prefecture": "Poitiers",
+  "region": "Nouvelle-Aquitaine",
+  "regionCode": "75"
+ },
+ {
+  "code": "87",
+  "nom": "Haute-Vienne",
+  "prefecture": "Limoges",
+  "region": "Nouvelle-Aquitaine",
+  "regionCode": "75"
+ },
+ {
+  "code": "88",
+  "nom": "Vosges",
+  "prefecture": "Épinal",
+  "region": "Grand Est",
+  "regionCode": "44"
+ },
+ {
+  "code": "89",
+  "nom": "Yonne",
+  "prefecture": "Auxerre",
+  "region": "Bourgogne-Franche-Comté",
+  "regionCode": "27"
+ },
+ {
+  "code": "90",
+  "nom": "Territoire de Belfort",
+  "prefecture": "Belfort",
+  "region": "Bourgogne-Franche-Comté",
+  "regionCode": "27"
+ },
+ {
+  "code": "91",
+  "nom": "Essonne",
+  "prefecture": "Évry-Courcouronnes",
+  "region": "Île-de-France",
+  "regionCode": "11"
+ },
+ {
+  "code": "92",
+  "nom": "Hauts-de-Seine",
+  "prefecture": "Nanterre",
+  "region": "Île-de-France",
+  "regionCode": "11"
+ },
+ {
+  "code": "93",
+  "nom": "Seine-Saint-Denis",
+  "prefecture": "Bobigny",
+  "region": "Île-de-France",
+  "regionCode": "11"
+ },
+ {
+  "code": "94",
+  "nom": "Val-de-Marne",
+  "prefecture": "Créteil",
+  "region": "Île-de-France",
+  "regionCode": "11"
+ },
+ {
+  "code": "95",
+  "nom": "Val-d'Oise",
+  "prefecture": "Pontoise",
+  "region": "Île-de-France",
+  "regionCode": "11"
+ },
+ {
+  "code": "971",
+  "nom": "Guadeloupe",
+  "prefecture": "Basse-Terre",
+  "region": "Guadeloupe",
+  "regionCode": "01"
+ },
+ {
+  "code": "972",
+  "nom": "Martinique",
+  "prefecture": "Fort-de-France",
+  "region": "Martinique",
+  "regionCode": "02"
+ },
+ {
+  "code": "973",
+  "nom": "Guyane",
+  "prefecture": "Cayenne",
+  "region": "Guyane",
+  "regionCode": "03"
+ },
+ {
+  "code": "974",
+  "nom": "La Réunion",
+  "prefecture": "Saint-Denis",
+  "region": "La Réunion",
+  "regionCode": "04"
+ },
+ {
+  "code": "976",
+  "nom": "Mayotte",
+  "prefecture": "Mamoudzou",
+  "region": "Mayotte",
+  "regionCode": "06"
+ }
+]

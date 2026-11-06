@@ -1,0 +1,1790 @@
+[
+ {
+  "code": "dz",
+  "nom": "Algérie",
+  "capitale": "Alger",
+  "capitalesAutres": [],
+  "drapeau": "flags/dz.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ao",
+  "nom": "Angola",
+  "capitale": "Luanda",
+  "capitalesAutres": [],
+  "drapeau": "flags/ao.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "bj",
+  "nom": "Bénin",
+  "capitale": "Porto-Novo",
+  "capitalesAutres": [
+   "Cotonou"
+  ],
+  "drapeau": "flags/bj.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "bw",
+  "nom": "Botswana",
+  "capitale": "Gaborone",
+  "capitalesAutres": [],
+  "drapeau": "flags/bw.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "bf",
+  "nom": "Burkina Faso",
+  "capitale": "Ouagadougou",
+  "capitalesAutres": [],
+  "drapeau": "flags/bf.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "bi",
+  "nom": "Burundi",
+  "capitale": "Gitega",
+  "capitalesAutres": [
+   "Bujumbura"
+  ],
+  "drapeau": "flags/bi.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "cv",
+  "nom": "Cap-Vert",
+  "capitale": "Praia",
+  "capitalesAutres": [],
+  "drapeau": "flags/cv.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "cm",
+  "nom": "Cameroun",
+  "capitale": "Yaoundé",
+  "capitalesAutres": [],
+  "drapeau": "flags/cm.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "cf",
+  "nom": "République centrafricaine",
+  "capitale": "Bangui",
+  "capitalesAutres": [],
+  "drapeau": "flags/cf.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "td",
+  "nom": "Tchad",
+  "capitale": "N'Djamena",
+  "capitalesAutres": [],
+  "drapeau": "flags/td.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "km",
+  "nom": "Comores",
+  "capitale": "Moroni",
+  "capitalesAutres": [],
+  "drapeau": "flags/km.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "cg",
+  "nom": "Congo",
+  "capitale": "Brazzaville",
+  "capitalesAutres": [],
+  "drapeau": "flags/cg.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "cd",
+  "nom": "République démocratique du Congo",
+  "capitale": "Kinshasa",
+  "capitalesAutres": [],
+  "drapeau": "flags/cd.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ci",
+  "nom": "Côte d'Ivoire",
+  "capitale": "Yamoussoukro",
+  "capitalesAutres": [
+   "Abidjan"
+  ],
+  "drapeau": "flags/ci.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "dj",
+  "nom": "Djibouti",
+  "capitale": "Djibouti",
+  "capitalesAutres": [],
+  "drapeau": "flags/dj.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "eg",
+  "nom": "Égypte",
+  "capitale": "Le Caire",
+  "capitalesAutres": [],
+  "drapeau": "flags/eg.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "gq",
+  "nom": "Guinée équatoriale",
+  "capitale": "Malabo",
+  "capitalesAutres": [
+   "Ciudad de la Paz"
+  ],
+  "drapeau": "flags/gq.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "er",
+  "nom": "Érythrée",
+  "capitale": "Asmara",
+  "capitalesAutres": [],
+  "drapeau": "flags/er.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "sz",
+  "nom": "Eswatini",
+  "capitale": "Mbabane",
+  "capitalesAutres": [
+   "Lobamba"
+  ],
+  "drapeau": "flags/sz.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "et",
+  "nom": "Éthiopie",
+  "capitale": "Addis-Abeba",
+  "capitalesAutres": [],
+  "drapeau": "flags/et.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ga",
+  "nom": "Gabon",
+  "capitale": "Libreville",
+  "capitalesAutres": [],
+  "drapeau": "flags/ga.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "gm",
+  "nom": "Gambie",
+  "capitale": "Banjul",
+  "capitalesAutres": [],
+  "drapeau": "flags/gm.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "gh",
+  "nom": "Ghana",
+  "capitale": "Accra",
+  "capitalesAutres": [],
+  "drapeau": "flags/gh.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "gn",
+  "nom": "Guinée",
+  "capitale": "Conakry",
+  "capitalesAutres": [],
+  "drapeau": "flags/gn.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "gw",
+  "nom": "Guinée-Bissau",
+  "capitale": "Bissau",
+  "capitalesAutres": [],
+  "drapeau": "flags/gw.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ke",
+  "nom": "Kenya",
+  "capitale": "Nairobi",
+  "capitalesAutres": [],
+  "drapeau": "flags/ke.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ls",
+  "nom": "Lesotho",
+  "capitale": "Maseru",
+  "capitalesAutres": [],
+  "drapeau": "flags/ls.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "lr",
+  "nom": "Liberia",
+  "capitale": "Monrovia",
+  "capitalesAutres": [],
+  "drapeau": "flags/lr.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ly",
+  "nom": "Libye",
+  "capitale": "Tripoli",
+  "capitalesAutres": [],
+  "drapeau": "flags/ly.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "mg",
+  "nom": "Madagascar",
+  "capitale": "Antananarivo",
+  "capitalesAutres": [],
+  "drapeau": "flags/mg.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "mw",
+  "nom": "Malawi",
+  "capitale": "Lilongwe",
+  "capitalesAutres": [],
+  "drapeau": "flags/mw.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ml",
+  "nom": "Mali",
+  "capitale": "Bamako",
+  "capitalesAutres": [],
+  "drapeau": "flags/ml.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "mr",
+  "nom": "Mauritanie",
+  "capitale": "Nouakchott",
+  "capitalesAutres": [],
+  "drapeau": "flags/mr.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "mu",
+  "nom": "Maurice",
+  "capitale": "Port-Louis",
+  "capitalesAutres": [],
+  "drapeau": "flags/mu.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ma",
+  "nom": "Maroc",
+  "capitale": "Rabat",
+  "capitalesAutres": [],
+  "drapeau": "flags/ma.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "mz",
+  "nom": "Mozambique",
+  "capitale": "Maputo",
+  "capitalesAutres": [],
+  "drapeau": "flags/mz.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "na",
+  "nom": "Namibie",
+  "capitale": "Windhoek",
+  "capitalesAutres": [],
+  "drapeau": "flags/na.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ne",
+  "nom": "Niger",
+  "capitale": "Niamey",
+  "capitalesAutres": [],
+  "drapeau": "flags/ne.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ng",
+  "nom": "Nigeria",
+  "capitale": "Abuja",
+  "capitalesAutres": [],
+  "drapeau": "flags/ng.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "rw",
+  "nom": "Rwanda",
+  "capitale": "Kigali",
+  "capitalesAutres": [],
+  "drapeau": "flags/rw.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "st",
+  "nom": "Sao Tomé-et-Principe",
+  "capitale": "São Tomé",
+  "capitalesAutres": [],
+  "drapeau": "flags/st.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "sn",
+  "nom": "Sénégal",
+  "capitale": "Dakar",
+  "capitalesAutres": [],
+  "drapeau": "flags/sn.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "sc",
+  "nom": "Seychelles",
+  "capitale": "Victoria",
+  "capitalesAutres": [],
+  "drapeau": "flags/sc.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "sl",
+  "nom": "Sierra Leone",
+  "capitale": "Freetown",
+  "capitalesAutres": [],
+  "drapeau": "flags/sl.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "so",
+  "nom": "Somalie",
+  "capitale": "Mogadiscio",
+  "capitalesAutres": [],
+  "drapeau": "flags/so.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "za",
+  "nom": "Afrique du Sud",
+  "capitale": "Pretoria",
+  "capitalesAutres": [
+   "Le Cap",
+   "Bloemfontein"
+  ],
+  "drapeau": "flags/za.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ss",
+  "nom": "Soudan du Sud",
+  "capitale": "Djouba",
+  "capitalesAutres": [],
+  "drapeau": "flags/ss.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "sd",
+  "nom": "Soudan",
+  "capitale": "Khartoum",
+  "capitalesAutres": [],
+  "drapeau": "flags/sd.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "tz",
+  "nom": "Tanzanie",
+  "capitale": "Dodoma",
+  "capitalesAutres": [
+   "Dar es Salaam"
+  ],
+  "drapeau": "flags/tz.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "tg",
+  "nom": "Togo",
+  "capitale": "Lomé",
+  "capitalesAutres": [],
+  "drapeau": "flags/tg.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "tn",
+  "nom": "Tunisie",
+  "capitale": "Tunis",
+  "capitalesAutres": [],
+  "drapeau": "flags/tn.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ug",
+  "nom": "Ouganda",
+  "capitale": "Kampala",
+  "capitalesAutres": [],
+  "drapeau": "flags/ug.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "zm",
+  "nom": "Zambie",
+  "capitale": "Lusaka",
+  "capitalesAutres": [],
+  "drapeau": "flags/zm.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "zw",
+  "nom": "Zimbabwe",
+  "capitale": "Harare",
+  "capitalesAutres": [],
+  "drapeau": "flags/zw.svg",
+  "continent": "Afrique",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ag",
+  "nom": "Antigua-et-Barbuda",
+  "capitale": "Saint John's",
+  "capitalesAutres": [],
+  "drapeau": "flags/ag.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ar",
+  "nom": "Argentine",
+  "capitale": "Buenos Aires",
+  "capitalesAutres": [],
+  "drapeau": "flags/ar.svg",
+  "continent": "Amérique du Sud",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "bs",
+  "nom": "Bahamas",
+  "capitale": "Nassau",
+  "capitalesAutres": [],
+  "drapeau": "flags/bs.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "bb",
+  "nom": "Barbade",
+  "capitale": "Bridgetown",
+  "capitalesAutres": [],
+  "drapeau": "flags/bb.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "bz",
+  "nom": "Belize",
+  "capitale": "Belmopan",
+  "capitalesAutres": [],
+  "drapeau": "flags/bz.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "bo",
+  "nom": "Bolivie",
+  "capitale": "Sucre",
+  "capitalesAutres": [
+   "La Paz"
+  ],
+  "drapeau": "flags/bo.svg",
+  "continent": "Amérique du Sud",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "br",
+  "nom": "Brésil",
+  "capitale": "Brasília",
+  "capitalesAutres": [],
+  "drapeau": "flags/br.svg",
+  "continent": "Amérique du Sud",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ca",
+  "nom": "Canada",
+  "capitale": "Ottawa",
+  "capitalesAutres": [],
+  "drapeau": "flags/ca.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "cl",
+  "nom": "Chili",
+  "capitale": "Santiago",
+  "capitalesAutres": [
+   "Valparaíso"
+  ],
+  "drapeau": "flags/cl.svg",
+  "continent": "Amérique du Sud",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "co",
+  "nom": "Colombie",
+  "capitale": "Bogota",
+  "capitalesAutres": [],
+  "drapeau": "flags/co.svg",
+  "continent": "Amérique du Sud",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "cr",
+  "nom": "Costa Rica",
+  "capitale": "San José",
+  "capitalesAutres": [],
+  "drapeau": "flags/cr.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "cu",
+  "nom": "Cuba",
+  "capitale": "La Havane",
+  "capitalesAutres": [],
+  "drapeau": "flags/cu.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "dm",
+  "nom": "Dominique",
+  "capitale": "Roseau",
+  "capitalesAutres": [],
+  "drapeau": "flags/dm.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "do",
+  "nom": "République dominicaine",
+  "capitale": "Saint-Domingue",
+  "capitalesAutres": [],
+  "drapeau": "flags/do.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ec",
+  "nom": "Équateur",
+  "capitale": "Quito",
+  "capitalesAutres": [],
+  "drapeau": "flags/ec.svg",
+  "continent": "Amérique du Sud",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "sv",
+  "nom": "Salvador",
+  "capitale": "San Salvador",
+  "capitalesAutres": [],
+  "drapeau": "flags/sv.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "gd",
+  "nom": "Grenade",
+  "capitale": "Saint-Georges",
+  "capitalesAutres": [],
+  "drapeau": "flags/gd.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "gt",
+  "nom": "Guatemala",
+  "capitale": "Guatemala",
+  "capitalesAutres": [],
+  "drapeau": "flags/gt.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "gy",
+  "nom": "Guyana",
+  "capitale": "Georgetown",
+  "capitalesAutres": [],
+  "drapeau": "flags/gy.svg",
+  "continent": "Amérique du Sud",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ht",
+  "nom": "Haïti",
+  "capitale": "Port-au-Prince",
+  "capitalesAutres": [],
+  "drapeau": "flags/ht.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "hn",
+  "nom": "Honduras",
+  "capitale": "Tegucigalpa",
+  "capitalesAutres": [],
+  "drapeau": "flags/hn.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "jm",
+  "nom": "Jamaïque",
+  "capitale": "Kingston",
+  "capitalesAutres": [],
+  "drapeau": "flags/jm.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "mx",
+  "nom": "Mexique",
+  "capitale": "Mexico",
+  "capitalesAutres": [],
+  "drapeau": "flags/mx.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ni",
+  "nom": "Nicaragua",
+  "capitale": "Managua",
+  "capitalesAutres": [],
+  "drapeau": "flags/ni.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "pa",
+  "nom": "Panama",
+  "capitale": "Panama",
+  "capitalesAutres": [],
+  "drapeau": "flags/pa.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "py",
+  "nom": "Paraguay",
+  "capitale": "Asunción",
+  "capitalesAutres": [],
+  "drapeau": "flags/py.svg",
+  "continent": "Amérique du Sud",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "pe",
+  "nom": "Pérou",
+  "capitale": "Lima",
+  "capitalesAutres": [],
+  "drapeau": "flags/pe.svg",
+  "continent": "Amérique du Sud",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "kn",
+  "nom": "Saint-Christophe-et-Niévès",
+  "capitale": "Basseterre",
+  "capitalesAutres": [],
+  "drapeau": "flags/kn.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "lc",
+  "nom": "Sainte-Lucie",
+  "capitale": "Castries",
+  "capitalesAutres": [],
+  "drapeau": "flags/lc.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "vc",
+  "nom": "Saint-Vincent-et-les-Grenadines",
+  "capitale": "Kingstown",
+  "capitalesAutres": [],
+  "drapeau": "flags/vc.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "sr",
+  "nom": "Suriname",
+  "capitale": "Paramaribo",
+  "capitalesAutres": [],
+  "drapeau": "flags/sr.svg",
+  "continent": "Amérique du Sud",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "tt",
+  "nom": "Trinité-et-Tobago",
+  "capitale": "Port-d'Espagne",
+  "capitalesAutres": [],
+  "drapeau": "flags/tt.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "us",
+  "nom": "États-Unis",
+  "capitale": "Washington",
+  "capitalesAutres": [],
+  "drapeau": "flags/us.svg",
+  "continent": "Amérique du Nord",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "uy",
+  "nom": "Uruguay",
+  "capitale": "Montevideo",
+  "capitalesAutres": [],
+  "drapeau": "flags/uy.svg",
+  "continent": "Amérique du Sud",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ve",
+  "nom": "Venezuela",
+  "capitale": "Caracas",
+  "capitalesAutres": [],
+  "drapeau": "flags/ve.svg",
+  "continent": "Amérique du Sud",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "af",
+  "nom": "Afghanistan",
+  "capitale": "Kaboul",
+  "capitalesAutres": [],
+  "drapeau": "flags/af.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "sa",
+  "nom": "Arabie saoudite",
+  "capitale": "Riyad",
+  "capitalesAutres": [],
+  "drapeau": "flags/sa.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "am",
+  "nom": "Arménie",
+  "capitale": "Erevan",
+  "capitalesAutres": [],
+  "drapeau": "flags/am.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "az",
+  "nom": "Azerbaïdjan",
+  "capitale": "Bakou",
+  "capitalesAutres": [],
+  "drapeau": "flags/az.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "bh",
+  "nom": "Bahreïn",
+  "capitale": "Manama",
+  "capitalesAutres": [],
+  "drapeau": "flags/bh.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "bd",
+  "nom": "Bangladesh",
+  "capitale": "Dacca",
+  "capitalesAutres": [],
+  "drapeau": "flags/bd.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "bt",
+  "nom": "Bhoutan",
+  "capitale": "Thimphou",
+  "capitalesAutres": [],
+  "drapeau": "flags/bt.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "bn",
+  "nom": "Brunei",
+  "capitale": "Bandar Seri Begawan",
+  "capitalesAutres": [],
+  "drapeau": "flags/bn.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "kh",
+  "nom": "Cambodge",
+  "capitale": "Phnom Penh",
+  "capitalesAutres": [],
+  "drapeau": "flags/kh.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "cn",
+  "nom": "Chine",
+  "capitale": "Pékin",
+  "capitalesAutres": [],
+  "drapeau": "flags/cn.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "cy",
+  "nom": "Chypre",
+  "capitale": "Nicosie",
+  "capitalesAutres": [],
+  "drapeau": "flags/cy.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "kp",
+  "nom": "Corée du Nord",
+  "capitale": "Pyongyang",
+  "capitalesAutres": [],
+  "drapeau": "flags/kp.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "kr",
+  "nom": "Corée du Sud",
+  "capitale": "Séoul",
+  "capitalesAutres": [],
+  "drapeau": "flags/kr.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ae",
+  "nom": "Émirats arabes unis",
+  "capitale": "Abou Dabi",
+  "capitalesAutres": [],
+  "drapeau": "flags/ae.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ge",
+  "nom": "Géorgie",
+  "capitale": "Tbilissi",
+  "capitalesAutres": [],
+  "drapeau": "flags/ge.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "in",
+  "nom": "Inde",
+  "capitale": "New Delhi",
+  "capitalesAutres": [],
+  "drapeau": "flags/in.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "id",
+  "nom": "Indonésie",
+  "capitale": "Jakarta",
+  "capitalesAutres": [
+   "Nusantara"
+  ],
+  "drapeau": "flags/id.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "iq",
+  "nom": "Irak",
+  "capitale": "Bagdad",
+  "capitalesAutres": [],
+  "drapeau": "flags/iq.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ir",
+  "nom": "Iran",
+  "capitale": "Téhéran",
+  "capitalesAutres": [],
+  "drapeau": "flags/ir.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "il",
+  "nom": "Israël",
+  "capitale": "Jérusalem",
+  "capitalesAutres": [],
+  "drapeau": "flags/il.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "jp",
+  "nom": "Japon",
+  "capitale": "Tokyo",
+  "capitalesAutres": [],
+  "drapeau": "flags/jp.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "jo",
+  "nom": "Jordanie",
+  "capitale": "Amman",
+  "capitalesAutres": [],
+  "drapeau": "flags/jo.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "kz",
+  "nom": "Kazakhstan",
+  "capitale": "Astana",
+  "capitalesAutres": [],
+  "drapeau": "flags/kz.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "kg",
+  "nom": "Kirghizistan",
+  "capitale": "Bichkek",
+  "capitalesAutres": [],
+  "drapeau": "flags/kg.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "kw",
+  "nom": "Koweït",
+  "capitale": "Koweït",
+  "capitalesAutres": [],
+  "drapeau": "flags/kw.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "la",
+  "nom": "Laos",
+  "capitale": "Vientiane",
+  "capitalesAutres": [],
+  "drapeau": "flags/la.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "lb",
+  "nom": "Liban",
+  "capitale": "Beyrouth",
+  "capitalesAutres": [],
+  "drapeau": "flags/lb.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "my",
+  "nom": "Malaisie",
+  "capitale": "Kuala Lumpur",
+  "capitalesAutres": [
+   "Putrajaya"
+  ],
+  "drapeau": "flags/my.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "mv",
+  "nom": "Maldives",
+  "capitale": "Malé",
+  "capitalesAutres": [],
+  "drapeau": "flags/mv.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "mn",
+  "nom": "Mongolie",
+  "capitale": "Oulan-Bator",
+  "capitalesAutres": [],
+  "drapeau": "flags/mn.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "mm",
+  "nom": "Birmanie",
+  "capitale": "Naypyidaw",
+  "capitalesAutres": [],
+  "drapeau": "flags/mm.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "np",
+  "nom": "Népal",
+  "capitale": "Katmandou",
+  "capitalesAutres": [],
+  "drapeau": "flags/np.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "om",
+  "nom": "Oman",
+  "capitale": "Mascate",
+  "capitalesAutres": [],
+  "drapeau": "flags/om.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "uz",
+  "nom": "Ouzbékistan",
+  "capitale": "Tachkent",
+  "capitalesAutres": [],
+  "drapeau": "flags/uz.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "pk",
+  "nom": "Pakistan",
+  "capitale": "Islamabad",
+  "capitalesAutres": [],
+  "drapeau": "flags/pk.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ph",
+  "nom": "Philippines",
+  "capitale": "Manille",
+  "capitalesAutres": [],
+  "drapeau": "flags/ph.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "qa",
+  "nom": "Qatar",
+  "capitale": "Doha",
+  "capitalesAutres": [],
+  "drapeau": "flags/qa.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "sg",
+  "nom": "Singapour",
+  "capitale": "Singapour",
+  "capitalesAutres": [],
+  "drapeau": "flags/sg.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "lk",
+  "nom": "Sri Lanka",
+  "capitale": "Sri Jayawardenapura Kotte",
+  "capitalesAutres": [
+   "Colombo"
+  ],
+  "drapeau": "flags/lk.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "sy",
+  "nom": "Syrie",
+  "capitale": "Damas",
+  "capitalesAutres": [],
+  "drapeau": "flags/sy.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "tj",
+  "nom": "Tadjikistan",
+  "capitale": "Douchanbé",
+  "capitalesAutres": [],
+  "drapeau": "flags/tj.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "th",
+  "nom": "Thaïlande",
+  "capitale": "Bangkok",
+  "capitalesAutres": [],
+  "drapeau": "flags/th.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "tl",
+  "nom": "Timor oriental",
+  "capitale": "Dili",
+  "capitalesAutres": [],
+  "drapeau": "flags/tl.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "tm",
+  "nom": "Turkménistan",
+  "capitale": "Achgabat",
+  "capitalesAutres": [],
+  "drapeau": "flags/tm.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "tr",
+  "nom": "Turquie",
+  "capitale": "Ankara",
+  "capitalesAutres": [],
+  "drapeau": "flags/tr.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "vn",
+  "nom": "Viêt Nam",
+  "capitale": "Hanoï",
+  "capitalesAutres": [],
+  "drapeau": "flags/vn.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ye",
+  "nom": "Yémen",
+  "capitale": "Sanaa",
+  "capitalesAutres": [
+   "Aden"
+  ],
+  "drapeau": "flags/ye.svg",
+  "continent": "Asie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "al",
+  "nom": "Albanie",
+  "capitale": "Tirana",
+  "capitalesAutres": [],
+  "drapeau": "flags/al.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "de",
+  "nom": "Allemagne",
+  "capitale": "Berlin",
+  "capitalesAutres": [],
+  "drapeau": "flags/de.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ad",
+  "nom": "Andorre",
+  "capitale": "Andorre-la-Vieille",
+  "capitalesAutres": [],
+  "drapeau": "flags/ad.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "at",
+  "nom": "Autriche",
+  "capitale": "Vienne",
+  "capitalesAutres": [],
+  "drapeau": "flags/at.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "be",
+  "nom": "Belgique",
+  "capitale": "Bruxelles",
+  "capitalesAutres": [],
+  "drapeau": "flags/be.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "by",
+  "nom": "Biélorussie",
+  "capitale": "Minsk",
+  "capitalesAutres": [],
+  "drapeau": "flags/by.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ba",
+  "nom": "Bosnie-Herzégovine",
+  "capitale": "Sarajevo",
+  "capitalesAutres": [],
+  "drapeau": "flags/ba.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "bg",
+  "nom": "Bulgarie",
+  "capitale": "Sofia",
+  "capitalesAutres": [],
+  "drapeau": "flags/bg.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "hr",
+  "nom": "Croatie",
+  "capitale": "Zagreb",
+  "capitalesAutres": [],
+  "drapeau": "flags/hr.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "dk",
+  "nom": "Danemark",
+  "capitale": "Copenhague",
+  "capitalesAutres": [],
+  "drapeau": "flags/dk.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "es",
+  "nom": "Espagne",
+  "capitale": "Madrid",
+  "capitalesAutres": [],
+  "drapeau": "flags/es.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ee",
+  "nom": "Estonie",
+  "capitale": "Tallinn",
+  "capitalesAutres": [],
+  "drapeau": "flags/ee.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "fi",
+  "nom": "Finlande",
+  "capitale": "Helsinki",
+  "capitalesAutres": [],
+  "drapeau": "flags/fi.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "fr",
+  "nom": "France",
+  "capitale": "Paris",
+  "capitalesAutres": [],
+  "drapeau": "flags/fr.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "gr",
+  "nom": "Grèce",
+  "capitale": "Athènes",
+  "capitalesAutres": [],
+  "drapeau": "flags/gr.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "hu",
+  "nom": "Hongrie",
+  "capitale": "Budapest",
+  "capitalesAutres": [],
+  "drapeau": "flags/hu.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ie",
+  "nom": "Irlande",
+  "capitale": "Dublin",
+  "capitalesAutres": [],
+  "drapeau": "flags/ie.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "is",
+  "nom": "Islande",
+  "capitale": "Reykjavik",
+  "capitalesAutres": [],
+  "drapeau": "flags/is.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "it",
+  "nom": "Italie",
+  "capitale": "Rome",
+  "capitalesAutres": [],
+  "drapeau": "flags/it.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "lv",
+  "nom": "Lettonie",
+  "capitale": "Riga",
+  "capitalesAutres": [],
+  "drapeau": "flags/lv.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "li",
+  "nom": "Liechtenstein",
+  "capitale": "Vaduz",
+  "capitalesAutres": [],
+  "drapeau": "flags/li.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "lt",
+  "nom": "Lituanie",
+  "capitale": "Vilnius",
+  "capitalesAutres": [],
+  "drapeau": "flags/lt.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "lu",
+  "nom": "Luxembourg",
+  "capitale": "Luxembourg",
+  "capitalesAutres": [],
+  "drapeau": "flags/lu.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "mk",
+  "nom": "Macédoine du Nord",
+  "capitale": "Skopje",
+  "capitalesAutres": [],
+  "drapeau": "flags/mk.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "mt",
+  "nom": "Malte",
+  "capitale": "La Valette",
+  "capitalesAutres": [],
+  "drapeau": "flags/mt.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "md",
+  "nom": "Moldavie",
+  "capitale": "Chisinau",
+  "capitalesAutres": [],
+  "drapeau": "flags/md.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "mc",
+  "nom": "Monaco",
+  "capitale": "Monaco",
+  "capitalesAutres": [],
+  "drapeau": "flags/mc.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "me",
+  "nom": "Monténégro",
+  "capitale": "Podgorica",
+  "capitalesAutres": [
+   "Cetinje"
+  ],
+  "drapeau": "flags/me.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "no",
+  "nom": "Norvège",
+  "capitale": "Oslo",
+  "capitalesAutres": [],
+  "drapeau": "flags/no.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "nl",
+  "nom": "Pays-Bas",
+  "capitale": "Amsterdam",
+  "capitalesAutres": [
+   "La Haye"
+  ],
+  "drapeau": "flags/nl.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "pl",
+  "nom": "Pologne",
+  "capitale": "Varsovie",
+  "capitalesAutres": [],
+  "drapeau": "flags/pl.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "pt",
+  "nom": "Portugal",
+  "capitale": "Lisbonne",
+  "capitalesAutres": [],
+  "drapeau": "flags/pt.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "cz",
+  "nom": "Tchéquie",
+  "capitale": "Prague",
+  "capitalesAutres": [],
+  "drapeau": "flags/cz.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ro",
+  "nom": "Roumanie",
+  "capitale": "Bucarest",
+  "capitalesAutres": [],
+  "drapeau": "flags/ro.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "gb",
+  "nom": "Royaume-Uni",
+  "capitale": "Londres",
+  "capitalesAutres": [],
+  "drapeau": "flags/gb.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ru",
+  "nom": "Russie",
+  "capitale": "Moscou",
+  "capitalesAutres": [],
+  "drapeau": "flags/ru.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "sm",
+  "nom": "Saint-Marin",
+  "capitale": "Saint-Marin",
+  "capitalesAutres": [],
+  "drapeau": "flags/sm.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "rs",
+  "nom": "Serbie",
+  "capitale": "Belgrade",
+  "capitalesAutres": [],
+  "drapeau": "flags/rs.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "sk",
+  "nom": "Slovaquie",
+  "capitale": "Bratislava",
+  "capitalesAutres": [],
+  "drapeau": "flags/sk.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "si",
+  "nom": "Slovénie",
+  "capitale": "Ljubljana",
+  "capitalesAutres": [],
+  "drapeau": "flags/si.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "se",
+  "nom": "Suède",
+  "capitale": "Stockholm",
+  "capitalesAutres": [],
+  "drapeau": "flags/se.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ch",
+  "nom": "Suisse",
+  "capitale": "Berne",
+  "capitalesAutres": [],
+  "drapeau": "flags/ch.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ua",
+  "nom": "Ukraine",
+  "capitale": "Kiev",
+  "capitalesAutres": [],
+  "drapeau": "flags/ua.svg",
+  "continent": "Europe",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "au",
+  "nom": "Australie",
+  "capitale": "Canberra",
+  "capitalesAutres": [],
+  "drapeau": "flags/au.svg",
+  "continent": "Océanie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "fj",
+  "nom": "Fidji",
+  "capitale": "Suva",
+  "capitalesAutres": [],
+  "drapeau": "flags/fj.svg",
+  "continent": "Océanie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "sb",
+  "nom": "Îles Salomon",
+  "capitale": "Honiara",
+  "capitalesAutres": [],
+  "drapeau": "flags/sb.svg",
+  "continent": "Océanie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ki",
+  "nom": "Kiribati",
+  "capitale": "Tarawa-Sud",
+  "capitalesAutres": [],
+  "drapeau": "flags/ki.svg",
+  "continent": "Océanie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "mh",
+  "nom": "Îles Marshall",
+  "capitale": "Majuro",
+  "capitalesAutres": [],
+  "drapeau": "flags/mh.svg",
+  "continent": "Océanie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "fm",
+  "nom": "Micronésie",
+  "capitale": "Palikir",
+  "capitalesAutres": [],
+  "drapeau": "flags/fm.svg",
+  "continent": "Océanie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "nr",
+  "nom": "Nauru",
+  "capitale": "Yaren",
+  "capitalesAutres": [],
+  "drapeau": "flags/nr.svg",
+  "continent": "Océanie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "nz",
+  "nom": "Nouvelle-Zélande",
+  "capitale": "Wellington",
+  "capitalesAutres": [],
+  "drapeau": "flags/nz.svg",
+  "continent": "Océanie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "pw",
+  "nom": "Palaos",
+  "capitale": "Ngerulmud",
+  "capitalesAutres": [],
+  "drapeau": "flags/pw.svg",
+  "continent": "Océanie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "pg",
+  "nom": "Papouasie-Nouvelle-Guinée",
+  "capitale": "Port Moresby",
+  "capitalesAutres": [],
+  "drapeau": "flags/pg.svg",
+  "continent": "Océanie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "ws",
+  "nom": "Samoa",
+  "capitale": "Apia",
+  "capitalesAutres": [],
+  "drapeau": "flags/ws.svg",
+  "continent": "Océanie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "to",
+  "nom": "Tonga",
+  "capitale": "Nuku'alofa",
+  "capitalesAutres": [],
+  "drapeau": "flags/to.svg",
+  "continent": "Océanie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "tv",
+  "nom": "Tuvalu",
+  "capitale": "Funafuti",
+  "capitalesAutres": [],
+  "drapeau": "flags/tv.svg",
+  "continent": "Océanie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "vu",
+  "nom": "Vanuatu",
+  "capitale": "Port-Vila",
+  "capitalesAutres": [],
+  "drapeau": "flags/vu.svg",
+  "continent": "Océanie",
+  "statut": "membre_onu"
+ },
+ {
+  "code": "va",
+  "nom": "Vatican",
+  "capitale": "Vatican",
+  "capitalesAutres": [],
+  "drapeau": "flags/va.svg",
+  "continent": "Europe",
+  "statut": "observateur"
+ },
+ {
+  "code": "ps",
+  "nom": "Palestine",
+  "capitale": "Jérusalem-Est",
+  "capitalesAutres": [
+   "Ramallah"
+  ],
+  "drapeau": "flags/ps.svg",
+  "continent": "Asie",
+  "statut": "observateur"
+ }
+]
