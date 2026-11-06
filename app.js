@@ -114,7 +114,7 @@ function check(it, input) {
 function details(it) {
   const r = it.ref;
   if (it.deck === 'dept') {
-    return `<dl class="facts"><dt>Numéro</dt><dd>${esc(r.code)}</dd><dt>Département</dt><dd>${esc(r.nom)}</dd><dt>Préfecture</dt><dd>${esc(r.prefecture)}</dd><dt>Région</dt><dd>${esc(r.region)}</dd></dl>` + mapDept(r.code);
+    return `<dl class="facts"><dt>Numéro</dt><dd>${esc(r.code)}</dd><dt>Département</dt><dd>${esc(r.nom)}</dd><dt>Préfecture</dt><dd>${esc(r.prefecture)}</dd><dt>Région</dt><dd>${esc(r.region)}</dd></dl>` + mapDept(r.code, r.prefecture);
   }
   const autres = r.capitalesAutres?.length ? ` <span class="muted small">(aussi : ${esc(r.capitalesAutres.join(', '))})</span>` : '';
   return `<div class="facts-head"><img src="data/${esc(r.drapeau)}" alt="Drapeau"><dl class="facts"><dt>Pays</dt><dd>${esc(r.nom)}</dd><dt>Capitale</dt><dd>${esc(r.capitale)}${autres}</dd></dl></div>` + mapPays(r.code, r.capitale);
@@ -334,11 +334,11 @@ document.addEventListener('keydown', (e) => {
 async function init() {
   $app.innerHTML = '<p class="muted center">Chargement…</p>';
   try {
-    const [depts, pays, dg, pg, caps] = await Promise.all(
-      ['data/departements.json', 'data/pays.json', 'data/geo/departements.geojson', 'data/geo/pays.geojson', 'data/capitales.json'].map((u) => fetch(u).then((r) => r.json()))
+    const [depts, pays, dg, pg, caps, prefs] = await Promise.all(
+      ['data/departements.json', 'data/pays.json', 'data/geo/departements.geojson', 'data/geo/pays.geojson', 'data/capitales.json', 'data/prefectures.json'].map((u) => fetch(u).then((r) => r.json()))
     );
     S.depts = depts; S.pays = pays;
-    initMaps(pg, dg, caps);
+    initMaps(pg, dg, caps, prefs);
     buildItems();
   } catch (e) {
     $app.innerHTML = `<p class="center">Impossible de charger les données. Vérifie ta connexion puis recharge la page.</p>`;

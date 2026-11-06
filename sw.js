@@ -1,10 +1,10 @@
 // Service worker : fonctionnement hors connexion. Incrémenter VERSION à chaque mise à jour des fichiers.
-const VERSION = 'v3';
+const VERSION = 'v4';
 const CACHE = 'cartes-' + VERSION;
 const CORE = [
   './', 'index.html', 'style.css', 'app.js', 'config.js', 'srs.js', 'sync.js', 'maps.js',
   'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-180.png',
-  'data/departements.json', 'data/pays.json', 'data/geo/departements.geojson', 'data/geo/pays.geojson', 'data/capitales.json',
+  'data/departements.json', 'data/pays.json', 'data/geo/departements.geojson', 'data/geo/pays.geojson', 'data/capitales.json', 'data/prefectures.json',
 ];
 
 self.addEventListener('install', (e) => {
